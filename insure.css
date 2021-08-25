@@ -1,0 +1,260 @@
+:root {
+    --o-wordfill-color: hsl(270, 9%, 17%);
+    --o-pagefill-background-color: hsl(256, 26%, 20%);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    position: relative;
+    background-color: hsl(0, 100%, 100%);
+}
+
+h1, h2, p {
+    font-size: 0px;
+}
+
+@font-face {
+    font-style: normal;
+    font-family: "Serif Display";
+    src: url("SerifDisplay.css"),
+    local("Serif Display"),
+    local("Serif-Display");
+}
+
+@font-face {
+    font-style: normal;
+    font-family: "Karla";
+    src: url("Karla.css"),
+    local("Karla");
+}
+
+#first-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/*==========  ID Rules  ==========*/
+#nav-pattern {
+    width: 100%;
+}
+
+#intro-photo {
+    width: 100%;
+    height: 100%;
+}
+
+#header-wrapper {
+    width: 90%;
+    height: 100%;
+    margin: 10% auto;
+}
+
+#menu-toggle {
+    float: right;
+}
+
+#family-photo {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+}
+
+#left-mobile {
+    width: 50%;
+    position: absolute;
+}
+
+#right-mobile {
+    width: 40%;
+    margin-top: 105%;
+    margin-left: 60%;
+    position: absolute;
+}
+
+#navigation-page {
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition-delay: 0.7s;
+    transition: height 0.7s ease-in-out;
+    background-color: var(--o-pagefill-background-color);
+}
+
+#navigation-page.open {
+    height: 43%;
+    transition: height 0.7s ease-in-out;
+}
+
+
+
+/*==========  Class Rules  ==========*/
+.logo {
+    padding-top: 2%;
+}
+
+.intro-info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu {
+    width: 80%;
+    height: 40%;
+    margin: 13% auto;
+}
+
+.intro-background {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    background-color: var(--o-pagefill-background-color);
+}
+
+/*==========  Element Rules  ==========*/
+section{
+    width: 100%;
+    height: 100%;
+    margin: 28% auto;
+}
+
+button {
+    width: 40%;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 25px auto;
+    text-align: center;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-family: "Karla";
+    color: hsl(0, 0%, 86%);
+    text-transform: uppercase;
+    border: 2px solid hsl(0, 0%, 86%);
+    background-color: var(--o-pagefill-background-color);
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 100%, 100%);
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 400;
+    margin: 10px 0px;
+    line-height: 50px;
+    padding: 0px 20px;
+    text-align: center;
+    color: hsl(0, 100%, 100%);
+    font-family: "Serif Display";
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0px 20px;
+    text-align: center;
+    font-family: "Karla";
+    color: hsl(0, 0%, 86%);
+    
+}
+
+a {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    font-family: "Karla";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(0, 100%, 100%);
+}
+
+
+
+/*==========  Animation and Pseudo Rules  ==========*/
+a:hover {
+    padding: 15px 0px;
+    border-width: 90%;
+    border: 2px solid hsl(0, 100%, 100%);
+}
+
+
+/*==========  Media Queries  ==========*/
+@media only screen and (orientation: landscape) {
+    #header-wrapper {
+        margin: 5% auto;
+    }
+
+    #first-flexbox {
+        flex-direction: row;
+    }
+
+    #intro-photo {
+        width: 50%;
+    }
+
+    #right-mobile {
+        margin-top: 80%;
+    }
+
+    #nav-pattern {
+        width: 0%;
+    }
+
+    #navigation-page.open {
+        height: 50%;
+        background-color: transparent;
+    }
+
+    .intro-info {
+        width: 50%;
+    }
+
+    section {
+        width: 85%;
+        margin: 22% auto;
+        margin-bottom: 0%;
+        margin-left: 10%;
+    }
+
+    h1 {
+        font-size: 33px;
+        line-height: 35px;
+        text-align: right;
+    }
+
+    a {
+        text-align: left;
+    }
+
+    p {
+        line-height: 25px;
+        font-size: 13px;
+        text-align: right;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 9px;
+        margin-left: 50%;
+    }
+
+    a:hover {
+        border-width: 50%;
+    }
+    
+}
