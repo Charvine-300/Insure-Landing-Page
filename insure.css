@@ -374,7 +374,7 @@ button:hover  {
     background-color: hsl(0, 100%, 100%);
 }
 
-/*@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
     .feature-images {
       animation: feature-images-spin infinite 10s linear;
     }
@@ -387,7 +387,7 @@ button:hover  {
     to {
       transform: rotate(360deg);
     }
-}*/
+}
 
 
 
