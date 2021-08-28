@@ -1,0 +1,375 @@
+#first-flexbox {
+    height: 100%;
+    position: relative;
+    width: 100% !important;
+    margin: 0% auto !important;
+    flex-direction: row !important;
+}
+
+#second-flexbox {
+    width: 80%;
+    margin: 0% auto !important;
+    flex-direction: row !important;
+}
+
+#last-flexbox {
+    width: 80%;
+    margin: 0% auto;
+    flex-direction: row;
+}
+
+
+
+/*==========  ID Rules  ==========*/
+#intro-photo {
+    width: 40%;
+    margin-top: 8%;
+    margin-left: 50%;
+    position: absolute;
+}
+
+#intro-info {
+    width: 40%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+}
+
+#family-photo {
+    width: 90%;
+} 
+
+#header-wrapper {
+    margin: 3% auto;
+}
+
+#navigation-page {
+    width: 49% !important;
+    height: 100% !important;
+    float: right !important;
+    display: inline !important;
+    position: relative !important;
+}
+
+#footer-pattern {
+    width: 40%;
+    height: 20%;
+    margin-bottom: 0%;
+}
+
+
+
+/*==========  Class Rules  ==========*/
+.ending-info {
+    width: 25%;
+}
+
+.additional-info {
+    width: 80%;
+    margin: 7% auto;
+}
+.logo {
+    padding: 0%;
+}
+
+.info-features {
+    width: 30%;
+}
+
+.feature-images {
+    margin: 0px;
+}
+
+.menu {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0% !important;
+    float: right !important;
+}
+
+.beauty-line {
+    width: 35%;
+    height: 1px;
+    margin: 10% 0%;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.desktop-top {
+    margin-top: 25%;
+    position: absolute;
+}
+
+.desktop-bottom {
+    width: 30%;
+    margin-left: 70%;
+    position: absolute;
+}
+
+.second-header {
+    width: 80%;
+    margin-top: 23%;
+    margin-bottom: 5%;
+}
+
+.feature-line {
+    width: 10%;
+    margin: 5% 0%;
+}
+
+.feature-headings {
+    font-size: 27px;
+}
+
+.feature-info {
+    padding: 25px 0px;
+    text-align: left !important;
+}
+
+.header-bag {
+    width: 55%;
+    float: left;
+    display: inline;
+}
+
+.additional-info button {
+    width: 25%;
+    margin-left: 75%;
+}
+
+.additional-info h1 {
+    font-size: 33px;
+}
+
+.social-media {
+    width: 80%;
+    margin: 0% 10%;
+}
+
+.social-platforms {
+    width: 24%;
+    float: right;
+    padding: 10% 0%;
+    padding-bottom: 3%;
+}
+
+.footer-logo {
+    display: inline;
+    padding: 10% 2%;
+    padding-bottom: 3%;
+}
+
+.fending-line {
+    width: 100%;
+    height: 1px;
+    margin: 3% auto;
+    margin-bottom: 8%;
+    background-color: #c5c5c5;
+}
+
+.ending-line {
+    width: 0%;
+    margin: 0%;
+}
+
+.ending-info p {
+    margin: 5px 0px;
+}
+
+.ending-tab {
+    padding-bottom: 0%;
+}
+
+
+/*==========  Element Rules  ==========*/
+article {
+    width: 85%;
+    padding: 7% 0%;
+    margin: 0% auto;
+}
+button {
+    width: 50%;
+    padding: 10px;
+    font-size: 11px;
+    margin-left: 0%;
+    margin-right: 42%;
+}
+
+h2 {
+    text-align: left;
+}
+
+h1 {
+    padding: 0px;
+    font-size: 33px;
+    line-height: 40px;
+    text-align: left !important;
+}
+
+p {
+    padding: 0px;
+    font-size: 11px;
+    line-height: 23px !important;
+    text-align: left !important;
+}
+
+section {
+    width: 75%;
+    margin-top: 20%;
+    margin-right: 24%;
+}
+
+a {
+    display: inline !important;
+    font-size: 13px !important;
+    color: #837D88 !important;
+    margin: 0px 10px !important;
+    text-align: right !important;
+    letter-spacing: 0px !important;
+}
+
+
+
+/*==========  Animation and Pseudo Rules  ==========*/
+a:hover {
+    color: hsl(270, 9%, 17%) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #family-photo {
+        width: 100%;
+    }
+
+    #second-flexbox {
+        width: 90%;
+        margin: 0% auto;
+    }
+
+    .additional-info {
+        margin: 5% auto !important;
+    }
+
+    .second-header {
+        margin-bottom: 0%;
+    }
+
+    .info-features {
+        margin-top: 3%;
+    }
+
+    .feature-images {
+        width: 70px;
+        height: 70px;
+        margin: 0px auto;
+    }
+
+    .feature-headings {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .feature-info {
+        font-size: 15px;
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /*==========  ID Rules  ==========*/
+    #header-wrapper {
+        margin: 2% auto !important;
+    }
+    
+
+
+
+    /*==========  Class Rules  ==========*/
+    .menu {
+        width: 75% !important;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    .additional-info button {
+        width: 20%;
+        margin-left: 80%;
+        display: block !important;
+    }
+
+    .additional-info h1 {
+        font-size: 43px;
+        line-height: 40px;
+    }
+
+   
+}
+
+@media only screen and (min-width: 1050px) {
+    .fending-line {
+        margin: 0% auto;
+        margin-bottom: 4%;
+    }
+
+    .menu {
+        width: 57% !important;
+    }
+
+    .social-platforms {
+        width: 14%;
+    }
+
+    button {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 58px;
+        line-height: 50px;
+        margin-bottom: 25px;
+        padding-right: 3px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .second-header {
+        margin-top: 20%;
+    }
+
+    .feature-images {
+    width: 86px;
+    height: 86px;
+    }
+
+    .additional-info h1 {
+        line-height: 47px;
+        font-size: 57px !important;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    h1 {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .additional-info h1 {
+        font-size: 57px !important;
+    }
+
+    .header-bag {
+        width: 52%;
+    }
+
+    .desktop-bottom {
+        height: 90%;
+    }
+}
+

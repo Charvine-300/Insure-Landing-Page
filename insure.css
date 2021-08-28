@@ -35,11 +35,40 @@ h1, h2, p {
     flex-direction: column;
 }
 
+#second-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#last-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 
 /*==========  ID Rules  ==========*/
 #nav-pattern {
-    width: 100%;
+    width: 0%;
 }
+
+#intro-info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#footer-pattern {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#howit-works {
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+} 
 
 #intro-photo {
     width: 100%;
@@ -76,6 +105,16 @@ h1, h2, p {
     position: absolute;
 }
 
+#intro-background {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    position: relative;
+    background-color: var(--o-pagefill-background-color);
+}
+
 #navigation-page {
     height: 0%;
     width: 100%;
@@ -83,7 +122,7 @@ h1, h2, p {
     position: absolute;
     transition-delay: 0.7s;
     transition: height 0.7s ease-in-out;
-    background-color: var(--o-pagefill-background-color);
+    /*background-color: var(--o-pagefill-background-color);*/
 }
 
 #navigation-page.open {
@@ -98,10 +137,98 @@ h1, h2, p {
     padding-top: 2%;
 }
 
-.intro-info {
+.ending-info {
     width: 100%;
     height: 100%;
-    position: relative;
+    margin-bottom: 8%;
+}
+
+.first-word {
+    padding-bottom: 5%;
+    margin: 0px !important;
+    color: #837D88 !important;
+  
+}
+
+.social-media {
+    width: 50%;
+    height: 100%;
+    margin: 0% 25%;
+    margin-bottom: 0%;
+    position: absolute;
+}
+
+.fending-line {
+    width: 0%;
+}
+
+.social-accounts {
+    padding: 0% 4%;
+}
+
+.social-platforms {
+    width: 88%;
+    margin: 0% auto;
+    padding: 15% 0%;
+    margin-right: 0%;
+    height: fit-content;
+}
+
+.footer-logo {
+    display: block;
+    margin: 0% auto;
+    padding: 45% 0%;
+    padding-bottom: 0%;
+}
+
+.info-features {
+    width: 100%;
+    height: 100%;
+    margin: 10% auto;
+}
+
+.features-template {
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+}
+
+.feature-headings {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.feature-info {
+    font-size: 17px;
+    line-height: 25px;
+    color: hsl(216, 30%, 68%);
+}
+
+.feature-images {
+    display: block;
+    margin: 0px auto;
+}
+
+.feature-line {
+    width: 40%;
+    height: 1px;
+    margin: 5% auto;
+    background-color: hsl(216, 30%, 68%);
+}
+
+.ending-line {
+    width: 85%;
+    height: 1px;
+    margin: 4% auto;
+    margin-bottom: 8%;
+    background-color: #c5c5c5;
+}
+
+.second-header {
+    width: 100%;
+    margin: 30% auto;
+    margin-bottom: 10%;
+    height: fit-content;
 }
 
 .menu {
@@ -110,16 +237,55 @@ h1, h2, p {
     margin: 13% auto;
 }
 
-.intro-background {
-    width: 100%;
+.additional-info {
+    width: 90%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    font-size: 0px;
+    margin: 30% auto;
+    position: relative;
     background-color: var(--o-pagefill-background-color);
 }
 
+.ending-tab {
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+    position: relative;
+    padding-bottom: 20%;
+    background-color: hsl(0, 0%, 98%);
+}
+
+
+
+/*==========  Class Element Rules  ==========*/
+.additional-info h1 {
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+.additional-info button {
+    width: 50%;
+    font-size: 11px;  
+}
+
+.ending-info p {
+    font-weight: 700;
+    margin: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--o-wordfill-color);
+}
+
+
+
+
 /*==========  Element Rules  ==========*/
+article {
+    width: 100%;
+    height: 100%;
+    padding: 20% 0%;
+}
+
 section{
     width: 100%;
     height: 100%;
@@ -159,6 +325,16 @@ h1 {
     font-family: "Serif Display";
 }
 
+h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 30px auto;
+    text-align: center;
+    font-family: "Serif Display";
+    color: var(--o-wordfill-color);
+
+}
+
 p {
     font-size: 20px;
     font-weight: 400;
@@ -187,19 +363,68 @@ a {
 
 /*==========  Animation and Pseudo Rules  ==========*/
 a:hover {
+    cursor: pointer;
     padding: 15px 0px;
     border-width: 90%;
     border: 2px solid hsl(0, 100%, 100%);
 }
 
+button:hover  {
+    color: var(--o-pagefill-background-color);
+    background-color: hsl(0, 100%, 100%);
+}
+
+/*@media (prefers-reduced-motion: no-preference) {
+    .feature-images {
+      animation: feature-images-spin infinite 10s linear;
+    }
+}
+
+@keyframes feature-images-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}*/
+
+
 
 /*==========  Media Queries  ==========*/
+@media only screen and (min-width: 411px) and (max-width: 414px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+
+
 @media only screen and (orientation: landscape) {
+
+    /*==========  ID Rules  ==========*/
     #header-wrapper {
-        margin: 5% auto;
+        margin: 5% auto !important;
+    }
+
+    #intro-info {
+        width: 50%;
     }
 
     #first-flexbox {
+        width: 100% !important;
+        flex-direction: row !important;
+    }
+
+    #second-flexbox {
+        width: 90%;
+        margin: 0% auto;
+        flex-direction: row;
+    }
+
+    #last-flexbox {
+        width: 80%;
+        margin: 0% auto;
         flex-direction: row;
     }
 
@@ -215,13 +440,147 @@ a:hover {
         width: 0%;
     }
 
+    #navigation-page {
+        position: absolute !important;
+        height: 0% !important;
+    }
+
     #navigation-page.open {
-        height: 50%;
+        height: 50% !important;
         background-color: transparent;
     }
 
-    .intro-info {
+    #howit-works {
+        width: 40%;
+        height: 100%;
+        margin-left: 60%;
+    }
+
+    #footer-pattern {
         width: 50%;
+        margin-bottom: 0%;
+    }
+
+
+    /*==========  Class Rules  ==========*/
+    .menu {
+        width: 80% !important;
+        height: 40% !important;
+        margin: 13% auto !important;
+    }
+
+    .ending-info {
+        width: 25%;
+    }
+
+    .ending-info p {
+        font-size: 12px;
+        margin: 5px 0px;
+        text-align: left !important;
+    }
+
+    .social-media {
+        width: 80%;
+        margin: 0% 10%;
+    }
+
+    .social-platforms {
+        width: 28%;
+        float: right;
+        padding: 10% 0%;
+        padding-bottom: 3%;
+    }
+
+    .footer-logo {
+        display: inline;
+        padding: 10% 2%;
+        padding-bottom: 3%;
+    }
+
+    .ending-line {
+        width: 0%;
+        margin: 0%;
+    }
+
+    .fending-line {
+        width: 100%;
+        height: 1px;
+        margin: 3% auto;
+        margin-bottom: 8%;
+        background-color: #c5c5c5;
+    }
+
+    .ending-tab {
+        margin-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .additional-info {
+        margin: 20% auto;
+    }
+
+    .second-header {
+        width: 90%;
+        margin: 17% auto;
+        margin-bottom: 0%;
+    }
+
+    .second-header h2 {
+        text-align: left;
+    }
+
+    .feature-info {
+        margin: 0px;
+        padding: 10px;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center !important;
+    }
+
+    .feature-line {
+        width: 20%;
+        margin-left: 0%;
+    }
+
+    .feature-headings {
+        font-size: 20px;
+    }
+
+    .info-features {
+        width: 30%;
+        margin: 0% auto;
+    }
+
+    .feature-images {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-bag {
+        width: 59%;
+        float: left;
+    }
+
+    .additional-info h1 {
+        padding: 0%;
+        display: inline;
+        font-size: 33px;
+        margin-bottom: 0%;    
+    }
+
+    .additional-info button {
+        margin: 0%;
+        width: 25%;
+        margin-top: 3%;
+        display: inline;
+        margin-left: 15%;
+    }
+
+    /*==========  Element Rules  ==========*/
+    article {
+        width: 85%;
+        padding: 10% 0%;
+        margin: 0% auto;
     }
 
     section {
@@ -234,17 +593,26 @@ a:hover {
     h1 {
         font-size: 33px;
         line-height: 35px;
-        text-align: right;
+        text-align: right !important;
     }
 
     a {
-        text-align: left;
+        display: block !important;
+        font-size: 17px !important;
+        font-weight: 600;
+        text-align: left !important;
+        letter-spacing: 3px !important;
+        margin-bottom: 30px !important;
+        font-family: "Karla";
+        text-decoration: none;
+        text-transform: uppercase;
+        color: hsl(0, 100%, 100%) !important;
     }
 
     p {
         line-height: 25px;
         font-size: 13px;
-        text-align: right;
+        text-align: right !important;
     }
 
     button {

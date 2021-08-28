@@ -6,7 +6,8 @@
     <meta charset="UTF-8">  
     <title>  Insure | Landing Page </title>
     <link rel="stylesheet" type="text/css" href="insure.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" media="(min-width: 768px)" href="insure2.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
   </head>
 
@@ -30,17 +31,17 @@
       </div>
     </header>
 
-    <div class="intro-background">
+    <div id="intro-background">
       <div id="first-flexbox">
         <div id="intro-photo">
           <img src="images/image-intro-mobile.jpg" alt="Famliy Photo" id="family-photo"/>
         </div>
-        <div class="intro-info">
+        <div id="intro-info">
           <img src="images/bg-pattern-intro-left-mobile.svg" alt="Intro Left" id="left-mobile"/>
           <img src="images/bg-pattern-intro-right-mobile.svg" alt="Intor Right" id="right-mobile"/>
 
-          <section>
-            <h1> Humanizing your insurance. </h1>
+          <section id="roaring-man">
+            <h1 id="head-girl"> Humanizing your insurance. </h1>
             <p> 
               Get your life insurance coverage easier and faster. We blend our expertise 
               and technology to help you find the plan that’s right for you. Ensure you 
@@ -49,58 +50,106 @@
             <button>  View plans </button>
           </section>
         </div>
-
       </div>
     </div>
 
-   <!--  We’re different
- 
-   Snappy Process
- 
-   Our application process can be completed in minutes, not hours. Don’t get 
-   stuck filling in tedious forms.
- 
-   Affordable Prices
- 
-   We don’t want you worrying about high monthly costs. Our prices may be low, 
-   but we still offer the best coverage possible.
- 
-   People First
- 
-   Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-   sure you’re covered when you need it.
- 
-   Find out more about how we work
- 
-   How we work
- 
-   Our company
- 
-   How we work
-   Why Insure?
-   View plans
-   Reviews
- 
-   Help me
- 
-   FAQ
-   Terms of use
-   Privacy policy
-   Cookies
- 
-   Contact
- 
-   Sales
-   Support
-   Live chat
- 
-   Others
- 
-   Careers
-   Press
-   Licenses-->
+    <div class="second-header">
+      <div class="feature-line"></div>
+      <h2> We’re different </h2>
+    </div>
+
+    <div id="second-flexbox">
+      <div class="info-features">
+        <section class="features-template">
+          <img src="images/icon-snappy-process.svg" alt="Snappy Process" class="feature-images"/>
+          <h2 class="feature-headings"> Snappy Process </h2>
+          <p class="feature-info">   
+            Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.
+          </p>
+        </section>
+      </div>
+      <div class="info-features">
+        <section class="features-template">
+          <img src="images/icon-affordable-prices.svg" alt="Affordable Prices" class="feature-images"/>
+          <h2 class="feature-headings"> Affordable Prices </h2>
+          <p class="feature-info">   
+            We don’t want you worrying about high monthly costs.
+            Our prices may be low, but we still offer the best coverage possible.
+          </p>
+        </section>
+      </div>
+      <div class="info-features">
+        <section class="features-template">
+          <img src="images/icon-people-first.svg" alt="People First" class="feature-images"/>
+          <h2 class="feature-headings"> People First </h2>
+          <p class="feature-info">   
+            Our plans aren’t full of conditions and clauses to prevent payouts. 
+            We make sure you’re covered when you need it.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div class="additional-info">
+      <img src="images/bg-pattern-how-we-work-mobile.svg" alt="How We Work" id="howit-works"/>
+      <article>
+        <div class="header-bag">
+          <h1> Find out more about how we work </h1>
+        </div>
+        <button> How we work </button>
+      </article>
+    </div>
+
+    <div class="ending-tab">
+      <div class="social-media">
+        <img src="images/logo.svg" alt="Footer Logo" class="footer-logo"/>
+        <div class="social-platforms">
+          <img src="images/icon-facebook.svg" alt="Facebook icon" class="social-accounts"/>
+          <img src="images/icon-twitter.svg" alt="Twitter icon" class="social-accounts"/>
+          <img src="images/icon-pinterest.svg" alt="Pinterest icon" class="social-accounts"/>
+          <img src="images/icon-instagram.svg" alt="Instagram icon" class="social-accounts"/>
+        </div>
+        
+        <div class="fending-line"></div>
+      </div>
+
+      <img src="images/bg-pattern-footer-mobile.svg" alt="Insure Footer" id="footer-pattern"/>
+
+      <div class="ending-line"></div>
+
+      <div id="last-flexbox">
+        <div class="ending-info">
+          <p class="first-word"> Our company </p>
+          <p> How we work </p>
+          <p> Why Insure? </p>
+          <p>  View plans </p>
+          <p> Reviews </p>
+        </div>
+        <div class="ending-info">
+          <p class="first-word">  Help me </p>
+          <p> FAQ </p>
+          <p> Terms of use </p>
+          <p> Privacy policy </p>
+          <p> Cookies </p>
+        </div>
+        <div class="ending-info"> 
+          <p class="first-word"> Contact </p>
+          <p> Sales </p>
+          <p> Support </p>
+          <p> Live chat </p>
+        </div>
+        <div class="ending-info">
+          <p class="first-word"> Others </p>
+          <p> Careers </p>
+          <p> Press </p>
+          <p> Licenses </p>
+        </div>
+      </div>
+     
+     
+    </div>
 
    <script src="insure.js"></script>
   </body>
-
 </html>
