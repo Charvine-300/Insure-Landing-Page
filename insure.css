@@ -408,7 +408,8 @@ button:hover  {
     }
 
     #intro-info {
-        width: 50%;
+        width: 50% !important;
+        margin: 0% auto !important;
     }
 
     #first-flexbox {
@@ -428,8 +429,14 @@ button:hover  {
         flex-direction: row;
     }
 
-    #intro-photo {
-        width: 50%;
+    #family-photo {
+        width: 100% !important;
+    }
+
+    #intro-photo { 
+        margin: 0% !important;
+        position: relative !important;
+        width: 50% !important;
     }
 
     #right-mobile {
@@ -584,15 +591,15 @@ button:hover  {
     }
 
     section {
-        width: 85%;
+        width: 85% !important;
         margin: 22% auto;
         margin-bottom: 0%;
         margin-left: 10%;
     }
 
     h1 {
-        font-size: 33px;
-        line-height: 35px;
+        font-size: 33px !important;
+        line-height: 35px !important;
         text-align: right !important;
     }
 
@@ -610,14 +617,14 @@ button:hover  {
     }
 
     p {
-        line-height: 25px;
-        font-size: 13px;
+        line-height: 25px !important;
+        font-size: 13px !important;
         text-align: right !important;
     }
 
     button {
-        padding: 10px;
-        font-size: 9px;
+        padding: 10px !important;
+        font-size: 9px !important;
         margin-left: 50%;
     }
 
